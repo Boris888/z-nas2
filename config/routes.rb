@@ -1,7 +1,40 @@
 Rails.application.routes.draw do
+  # get 'orders/index'
+
+  # get 'orders/show'
+
+  # get 'orders/new'
+
+  # get 'orders/create'
+
+  # get 'orders/edit'
+
+  # get 'orders/update'
+
+  # get 'orders/destroy'
+
+resources :orders, only: [:show, :create]
+
+
+  # get 'dishes/index'
+
+  # get 'dishes/show'
+
+  # get 'dishes/new'
+
+  # get 'dishes/create'
+
+  # get 'dishes/edit'
+
+  # get 'dishes/update'
+
+  # get 'dishes/destroy'
+  root 'dishes#index'
+  resources :dishes, only: [:index, :show]
+
   resources :articles
   devise_for :users
-  root to: 'pages#home'
+  # root to: 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
