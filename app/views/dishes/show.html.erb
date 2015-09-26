@@ -3,3 +3,9 @@
 
 <h1>dish <%= @dish.name %></h1>
 <p>Amount: <%= humanized_money_with_symbol(@dish.price) %></p>
+
+
+<%= form_tag orders_path do %>
+  <%= hidden_field_tag 'dish_id', @dish.id %>
+  <%= submit_tag 'Purchase' %>
+<% end %>
