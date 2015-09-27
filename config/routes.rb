@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'payments/new'
+
   # get 'orders/index'
 
   # get 'orders/show'
@@ -13,7 +15,9 @@ Rails.application.routes.draw do
 
   # get 'orders/destroy'
 
-resources :orders, only: [:show, :create]
+resources :orders, only: [:show, :create] do
+  resources :payments, only: [:new, :create]
+  end
 
 
   # get 'dishes/index'
