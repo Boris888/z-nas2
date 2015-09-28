@@ -16,6 +16,8 @@ gem 'simple_form'
 gem 'autoprefixer-rails'
 
 gem 'money-rails'
+gem 'coffee-script'
+gem 'stripe'
 
 group :development, :test do
   gem 'binding_of_caller'
