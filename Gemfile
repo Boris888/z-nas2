@@ -17,8 +17,8 @@ gem 'autoprefixer-rails'
 
 gem 'money-rails'
 gem 'coffee-script'
-gem 'stripe'
 gem 'omniauth-facebook'
+gem 'stripe'
 
 group :development, :test do
   gem 'binding_of_caller'
